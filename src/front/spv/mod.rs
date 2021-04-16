@@ -1599,6 +1599,7 @@ impl<I: Iterator<Item = u32>> Parser<I> {
                         Glo::Sqrt => Mf::Sqrt,
                         Glo::InverseSqrt => Mf::InverseSqrt,
                         Glo::Determinant => Mf::Determinant,
+                        Glo::MatrixInverse => Mf::Inverse,
                         Glo::Modf => Mf::Modf,
                         Glo::FMin | Glo::UMin | Glo::SMin | Glo::NMin => Mf::Min,
                         Glo::FMax | Glo::UMax | Glo::SMax | Glo::NMax => Mf::Max,
